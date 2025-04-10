@@ -1,16 +1,12 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'], // Adjust based on your file structure
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust based on your project structure
+  ],
   theme: {
     extend: {
-      animation: {
-        fadeIn: 'fadeIn 100ms ease-in', // 100ms duration with ease-in
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
+      fontFamily: {
+        oxanium: ['"Oxanium"', 'sans-serif'], // Add Oxanium as a custom font
       },
     },
   },
